@@ -1,0 +1,80 @@
+def fizzbuzz(i):
+    while i < 1001:
+        if i % 3 == 0 and i % 5 == 0:
+            print('fizzbuzz')
+        elif i % 3 == 0:
+            print('fizz')
+        elif i % 5 == 0:
+            print('buzz')
+        else:
+            print(i)
+        i += 1
+
+
+def square(n):
+    count = 1
+    square = count * count
+    while square < n:
+        print(square)
+        count +=1
+        square = count * count
+
+
+def multi():
+    i = 3
+    y=5
+    k=15
+    lis_3=[]
+    lis_4=[]
+    lis_5=[]
+    while i < 1000 :
+        lis_3.append(i)
+        i+=3
+    while y < 1000:
+        lis_4.append(y)
+        y+=5
+    while k < 1000:
+        lis_5.append(k)
+        k+=15
+
+    for number in lis_3:
+        if number in lis_5:
+            lis_3.remove(number)
+    return(sum(lis_3+lis_4))
+
+
+
+
+
+def fib(n,limit):
+    a = n
+    b = n + n
+    ret = []
+    while b < limit:
+        c = a + b
+        ret.append(c)
+        a = b
+        b = c
+    return ret
+
+
+def eve(n):
+    eve=2
+    for number in n:
+        if number%2==0:
+            eve = eve + number
+    return eve
+
+# n = fib(n=1,limit = 4000000)
+
+def prime_factor(n):
+    prime_factor = 1
+    i = 2
+
+    while i <= n /i:
+        if i 2 == 0:
+            prime_factor = i
+            i += 1
+    while prime_factor < n:
+        prime_factor = n
+    return prime_factor
